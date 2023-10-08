@@ -1,0 +1,41 @@
+<p class="text-danger">botones works!</p>
+
+<section>
+    
+<div>
+    <button [class]="{
+        'disabled':button_disabled,
+        'btn':true,
+        'btn-danger':true
+    }"class="btn btn-danger" (click)="text_color='text-danger'">Color rojo
+
+    </button>
+    <button [class]="{
+        'disabled':button_disabled,
+    }"class="btn btn-success mx-2" (click)="text_color='text-success'">Color verde
+
+    </button>
+    <button [class]="{
+        'disabled':button_disabled,
+    }"class="btn btn-primary" (click)="text_color='text-primary'">Color azul
+        
+    </button>
+</div>
+
+
+<p [class]="text_color">Texto que va a cambair de color</p>
+
+<button class="btn btn-secondary" (click)="button_disabled=!button_disabled">Activar/Desactivar</button>
+
+</section>
+<br>
+<div>
+    <button class="btn btn-primary" (click)="imagen='https://images.pexels.com/photos/17273171/pexels-photo-17273171/free-photo-of-blanco-y-negro-campo-animal-granja.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'">
+        Image 1
+    </button>
+    <button class="btn btn-primary" (click)="imagen='https://images.pexels.com/photos/17283477/pexels-photo-17283477/free-photo-of-blanco-y-negro-ciudad-edificios-torre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'">
+        Image 2
+    </button>
+</div>
+
+<img [src]="imagen" alt="">

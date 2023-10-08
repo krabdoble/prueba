@@ -1,0 +1,21 @@
+<p class="text-success">formulario works!</p>
+
+<!--<form>
+    <div>
+        <div >
+            <input class="form-control mt-2 border-danger" type="text" placeholder="Nombre completo" #name>
+        </div>
+        <div>
+            <input class="form-control mt-2 border-danger" type="text" placeholder="email" #name>
+        </div>
+        <div>
+            <button class="btn btn-danger mt-2" type="submit" (click)="mostrar_en_consola()">Mostrar en consola</button>
+        </div>
+        <div>
+            <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+        </div>
+    </div>
+    
+</form>-->
+<input class="form-control mt-2 border-danger" type="text" placeholder="Nombre completo" #name>
+<button class="btn btn-danger mt-2" type="submit" (click)="mostrar_en_consola(name.value)">Mostrar en consola</button>
